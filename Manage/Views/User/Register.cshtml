@@ -1,0 +1,34 @@
+﻿@model Users
+<div class="text-center">
+    <h1 class="display-4">Register</h1>
+    <div>
+        <form asp-action="Register" method="post">
+            <div class="form-control">
+                <label asp-for="FullName"></label>
+                <input asp-for="FullName" type="text" />
+                <span asp-validation-for="FullName" class="text-danger"></span>
+            </div>
+
+            <div class="form-control">
+                <label asp-for="Email"></label>
+                <input asp-for="Email" type="text" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+
+            <div class="form-control">
+                <label asp-for="Phone"></label>
+                <input asp-for="Phone" type="text" />
+                <span asp-validation-for="Phone" class="text-danger"></span>
+            </div>
+
+            <div class="form-control">
+                <label asp-for="ReferralCode">Mã giới thiệu (nếu có)</label>
+                <input asp-for="ReferralCode" type="text" />
+            </div>
+
+            <div class="mt-1">
+                <input type="submit" value="Create" class="btn btn-outline-success" />
+            </div>
+        </form>
+    </div>
+</div>

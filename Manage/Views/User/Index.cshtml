@@ -1,0 +1,44 @@
+﻿@model IEnumerable<Manage.Models.Users>
+
+<div class="text-center">
+    <div class="container mt-3">
+        <h2>List user</h2>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Fulll Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Mã giới thiệu</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model != null && Model.Any())
+                {
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.Id</td>
+                            <td>@item.FullName</td>
+                            <td>@item.Email</td>
+                            <td>@item.Phone</td>
+                            <td>@item.ReferralCode</td>
+                            <td>
+                                <a class="btn btn-danger" asp-action="Detail" asp-route-id="@item.Id">View detail user</a>
+                            </td>
+
+                        </tr>
+                    }
+                } else {
+                    <tr>
+                        <td colspan="8" class="text-center">No data available</td>
+                    </tr>
+                }
+                
+            </tbody>
+        </table>
+    </div>
+</div>
+

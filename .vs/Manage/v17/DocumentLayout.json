@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Job\\Manage\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C119C3A4-B35C-44B2-8075-EB02138B3C44}|Manage\\Manage.csproj|d:\\job\\manage\\manage\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C119C3A4-B35C-44B2-8075-EB02138B3C44}|Manage\\Manage.csproj|solutionrelative:manage\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C119C3A4-B35C-44B2-8075-EB02138B3C44}|Manage\\Manage.csproj|d:\\job\\manage\\manage\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C119C3A4-B35C-44B2-8075-EB02138B3C44}|Manage\\Manage.csproj|solutionrelative:manage\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C119C3A4-B35C-44B2-8075-EB02138B3C44}|Manage\\Manage.csproj|d:\\job\\manage\\manage\\views\\user\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C119C3A4-B35C-44B2-8075-EB02138B3C44}|Manage\\Manage.csproj|solutionrelative:manage\\views\\user\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Users.cs",
+              "DocumentMoniker": "D:\\Job\\Manage\\Manage\\Models\\Users.cs",
+              "RelativeDocumentMoniker": "Manage\\Models\\Users.cs",
+              "ToolTip": "D:\\Job\\Manage\\Manage\\Models\\Users.cs",
+              "RelativeToolTip": "Manage\\Models\\Users.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAgwCcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T03:57:12.782Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "D:\\Job\\Manage\\Manage\\Views\\User\\Register.cshtml",
+              "RelativeDocumentMoniker": "Manage\\Views\\User\\Register.cshtml",
+              "ToolTip": "D:\\Job\\Manage\\Manage\\Views\\User\\Register.cshtml",
+              "RelativeToolTip": "Manage\\Views\\User\\Register.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-19T04:58:12.679Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "D:\\Job\\Manage\\Manage\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Manage\\Controllers\\UserController.cs",
+              "ToolTip": "D:\\Job\\Manage\\Manage\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Manage\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T04:45:35.497Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

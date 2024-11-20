@@ -1,0 +1,86 @@
+﻿@model IEnumerable<Manage.Models.Users>
+
+
+
+<div class="text-center">
+    <div class="container mt-3">
+        <h2>Detail user</h2>
+
+        <div style="text-align:left; font-size:20px;">
+            <p>Id: @ViewBag.user.Id</p>
+            <p>Full name: @ViewBag.user.FullName</p>
+            <p>Email: @ViewBag.user.Email</p> 
+            <p>Phone: @ViewBag.user.Phone</p>
+            <p>Mã giới thiệu: @ViewBag.user.ReferralCode</p>
+        </div>
+
+        <br/>
+
+
+        <div style="text-align:left; font-size:20px; font-weight:600">
+            <p>Member đã sử dụng mã của bạn</p>
+        </div>
+
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Fulll Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Mã giới thiệu</th>
+                    <th>Người giới thiệu</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model != null && Model.Any())
+                {
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.Id</td>
+                            <td>@item.FullName</td>
+                            <td>@item.Email</td>
+                            <td>@item.Phone</td>
+                            <td>@item.ReferralCode</td>
+                            <td>
+                                @{
+                                    if (item.ReferredBy == ViewBag.user.Id)
+                                    {
+                                        @ViewBag.user.FullName
+                                    }
+                                    else
+                                    {
+                                        var referrer = Model.FirstOrDefault(u => u.Id == item.ReferredBy);
+                                        if (referrer != null)
+                                        {
+                                            @referrer.FullName
+                                        }
+                                        else
+                                        {
+                                            <i>Unknown</i>
+                                        }
+                                    }
+                                }
+                            </td>
+
+                            @* <td>@Html.Raw(@item.ReferredBy == @ViewBag.user.Id ? @ViewBag.user.FullName : @item.ReferredBy)</td> *@
+                            @* <th> *@
+                            @*     <a class="btn btn-danger" asp-action="Detail" asp-route-id="@item.Id">View detail user</a> *@
+                            @* </th> *@
+
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr>
+                        <td colspan="8" class="text-center">No data available</td>
+                    </tr>
+                }
+
+            </tbody>
+        </table>
+    </div>
+</div>
+
